@@ -44,3 +44,19 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+# learn-rails
+gem 'activerecord-tableless', '~> 1.3', '>= 1.3.4'
+gem 'compass-rails', '~> 3.0', '>= 3.0.2'
+gem 'figaro'
+gem 'gibbon', '~> 2.2', '>= 2.2.3'
+gem 'google_drive', '~> 1.0', '>= 1.0.6'
+gem 'high_voltage', '~> 2.4'
+gem 'simple_form', '~> 3.2', '>= 3.2.1'
+gem 'zurb-foundation', '~> 4.3', '>= 4.3.2'
+
+group :development do
+gem 'better_errors', '~> 2.1', '>= 2.1.1'
+gem 'quiet_assets', '~> 1.1'
+gem 'rails_layout', '~> 1.0', '>= 1.0.29'
+end
