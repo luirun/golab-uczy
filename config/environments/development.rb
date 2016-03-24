@@ -33,8 +33,7 @@ Rails.application.configure do
   authentication: "plain",
   enable_starttls_auto: true,
   user_name: ENV["GMAIL_USERNAME"],
-  password: ENV ["GMAIL_PASSWORD"]
-  
+  password: ENV["GMAIL_PASSWORD"]
   }
 
   # Asset digests allow you to set far-future HTTP expiration dates on all assets,
