@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html>
-<%= yield %>
-<h3>Domek</h3>
-<p>Welcome to the home of <%= @owner.name %>.</p>
-<p>I was born on <%= @owner.birthdate %>.</p>
-<p>Only <%= @owner.countdown %> days until my birthday!</p>
-<button class="big green button">Order Now</button>
-<footer class="row">
-	<section class="small-4 columns">
-		2016 &copy;
-	</section>
-	
-	<section class="small-12 columns">
-		All rights reserved.
-	</section>
-</footer>
+<% content_for :title do %>Jan Matuszewski <% end %>
+<% content_for :description do %>Strona Jasia <% end %>
+<section>
+	<img src="http://plfoto.com/zdjecia_new2/2042460.jpg" width="200px" height="200px">
+</section>
+<section>
+	<div class="column">
+		<h2>Bądź w kontakcie:</h2>
+	</div>
+	<div class="column">
+	<div class="form-centered">
+		<%= simple_form_for @visitor do |f| %>
+			<%= f.error_notification %>
+			<%= f.input :email, label: false, :placeholder => 'Twoj adres imail...' %>
+			</br>
+			<%= f.button :submit, "Sign up for the newsletter", :class => "submit" %>
+		<% end %>
+	</div>
+	</div>
+</section>
 </html>
